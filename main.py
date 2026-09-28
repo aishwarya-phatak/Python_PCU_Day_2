@@ -1,16 +1,19 @@
-# This is a sample Python script.
+from Employee1 import Employee1
+from Person import Person
+from Student import Student
 
-# Press ⌃R to execute it or replace it with your code.
-# Press Double ⇧ to search everywhere for classes, files, tool windows, actions, and settings.
+def introduce(x):
+    x.display()
 
+e1 = Employee1("Abc","Pune",213212.12)
+e2 = Employee1("Xyz","Pune",3243212.12)
 
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press ⌘F8 to toggle the breakpoint.
+p1 = Person("Aaa","Pune")
 
+s1 = Student("ABC","Pune",211)
+s2 = Student("XYZ","Pune",344)
 
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+introduce(e1)
+introduce(e2)
+introduce(p1)
+introduce(s1)
